@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict'
+    //严格模式 阻止变量提升
+//    a =10;
+//    console.log(a);
+
+    var arr = [1,2,3,4];
+    var array = arr.map(function (item) {
+        return item*item;
+    });
+    console.log(array);
+    //高阶函数   函数的参数是函数
+    var array1 = arr.filter(function (item) {
+        return item > 3;
+    })
+    console.log(array1);
+</script>
+</body>
+</html>
